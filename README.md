@@ -8,7 +8,8 @@
 [![npm][dt-image]][npm-url]
 [![npm][dm-image]][npm-url]
 
-An Ionic component similar to `ion-select`, that allows to search items, including async search and infinite scrolling.  
+An Ionic component similar to `ion-select`, that allows to search items, including async search and infinite scrolling. 
+Feature of having add new item if not available in given items.
 
 ![iOS Demo](demo/ios.gif)
 
@@ -45,6 +46,7 @@ export class AppModule { }
 <ion-item>
     <ion-label>Port</ion-label>
     <select-searchable
+        isShowAdd="true"
         item-content
         [(ngModel)]="port"
         [items]="ports"
